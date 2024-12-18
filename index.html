@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Response Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Production Incident Response Tracker</h1>
+        <p>Track progress through the incident response workflow.</p>
+    </header>
+    <main>
+        <section id="assess">
+            <h2>1. Assess</h2>
+            <ul>
+                <li><label><input type="checkbox" class="step"> Determine if a war room is needed.</label></li>
+                <li><label><input type="checkbox" class="step"> Check Purchase Flow Monitoring Dashboard.</label></li>
+                <li><label><input type="checkbox" class="step"> Notify Team Lead for low-severity issues.</label></li>
+            </ul>
+        </section>
+        <section id="war-room">
+            <h2>2. Operating the War Room</h2>
+            <ul>
+                <li><label><input type="checkbox" class="step"> Start a Zoom call in #prod_issue_war_room.</label></li>
+                <li><label><input type="checkbox" class="step"> Assign an owner for the process.</label></li>
+                <li><label><input type="checkbox" class="step"> Notify relevant personnel via Slack/phone.</label></li>
+                <li><label><input type="checkbox" class="step"> Post updates in relevant channels.</label></li>
+            </ul>
+        </section>
+        <section id="post-war-room">
+            <h2>3. Post War Room</h2>
+            <ul>
+                <li><label><input type="checkbox" class="step"> Announce resolution on communication channels.</label></li>
+                <li><label><input type="checkbox" class="step"> Update downtime logs and uptime calculators.</label></li>
+                <li><label><input type="checkbox" class="step"> Schedule a retrospective.</label></li>
+            </ul>
+        </section>
+        <button id="reset">Reset Progress</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
